@@ -3,7 +3,7 @@ module.exports = {
     content: ["./*.{css,html,js}"],
     theme: {
         extend: {
-            fontFamily: { 'quiche': ['QuicheText-Regular.ttf', 'sans-serif'] },
+            fontFamily: { 'quiche': ['"quiche-stencil"', 'sans-serif'], },
             colors: {
                 orange: '#FFD0AF',
                 pink:'#EF6C98',
