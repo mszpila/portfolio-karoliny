@@ -3,11 +3,14 @@ module.exports = {
     content: ["./*.{css,html,js}"],
     theme: {
         extend: {
-            fontFamily: { 'quiche': ['"quiche-stencil"', 'sans-serif'], },
+            fontFamily: {
+                'quiche': ['"quiche-stencil"', 'sans-serif'],
+                'sans': ['Open Sans', 'sans-serif'],
+            },
             colors: {
-                orange: '#FFD0AF',
-                pink:'#EF6C98',
-                white:'#F1ECE8',
+                korange: '#FFD0AF',
+                kpink:'#EF6C98',
+                kwhite:'#F1ECE8',
 
                 background: '#FFFFFF',
                 foreground: '#F5F5F7',
