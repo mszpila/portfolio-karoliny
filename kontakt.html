@@ -51,7 +51,7 @@
 <body class="bg-kwhite">
 
 <!-- Desktop header -->
-<div id="header" class="hidden lg:block absolute w-full bg-kpink bg-opacity-0 font-quiche">
+<div id="header" class="hidden lg:block w-full bg-kpink bg-opacity-0 font-quiche">
   <div class="flex items-center justify-between p-4">
     <div class="flex-1 text-center">
       <a href="#" class="text-3xl md:text-4xl lg:text-6xl text-black">Karolina Kempa</a>
@@ -88,10 +88,10 @@
 
 <!-- Mobile header -->
 <!--<div class="flex fixed top-0 w-full lg:hidden font-quiche header transparent bg-kpink">-->
-<div id="mobile-header" class="flex fixed top-0 w-full lg:hidden font-quiche header transparent items-center justify-between transparent p-4 bg-kpink">
+<div id="mobile-header" class="flex fixed top-0 w-full lg:hidden font-quiche header transparent items-center justify-end transparent p-4 bg-kpink">
   <!-- Hamburger Button for Mobile -->
   <button id="hamburger-btn" class="p-2 focus:outline-none">
-    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
     </svg>
   </button>
@@ -138,9 +138,19 @@
 </div>
 
 <!-- Overlay -->
-<div id="overlay" class="fixed inset-0 bg-black opacity-50 z-30 hidden"></div>
+<!--<div id="overlay" class="fixed inset-0 bg-black opacity-50 z-30 hidden"></div>-->
 
-<div class="h-screen">
+<div class="flex flex-col pt-8 px-8 text-lg text-center">
+  <div class="flex text-4xl text-center font-quiche justify-center my-8">
+    <text>Bardzo się cieszę, że tutaj jesteście!</text>
+  </div>
+
+  <div>
+    <text>Jeżeli macie jakieś pytania lub chcielibyście szczegółowo zobaczyć moją ofertę to serdecznie zapraszam do kontaktu</text>
+  </div>
+</div>
+
+<div class="h-full flex">
   <iframe src="https://usebasin.com/form/86a4a9bb98b1/view/6f2161d2a469?iframe=true" frameborder="0" style="border: none; overflow: hidden;" onload="var self = this; self.contentWindow.postMessage('getHeight', ''); setInterval(function() { self.contentWindow.postMessage('getHeight', ''); }, 500); window.addEventListener('message', function(event) { if (event.data.action === 'setHeight') { self.style.height = event.data.height + 'px'; } });" width="100%"></iframe>
 </div>
 
